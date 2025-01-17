@@ -6,8 +6,8 @@ import '../../../data/provider/characters_api.dart';
 class CharactersBinding extends Bindings {
   @override
   void dependencies() {
-    Get.put(CharactersApi()); // Primero el API
-    Get.put(CharactersRepository()); // Luego el Repository
+    Get.put(CharactersApi()); 
+    Get.put(CharactersRepository()); 
     Get.lazyPut<CharactersController>(() => CharactersController()); 
   }
 }

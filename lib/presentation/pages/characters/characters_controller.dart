@@ -20,7 +20,7 @@ class CharactersController extends GetxController {
     isLoading.value = true;
     errorMessage.value = '';
     try {
-      final result = await _charactersRepository.getCharacters(1); // Página 1
+      final result = await _charactersRepository.getCharacters(1);
       characters.value = result.character;
       filteredCharacters.value = result.character;
     } catch (error) {

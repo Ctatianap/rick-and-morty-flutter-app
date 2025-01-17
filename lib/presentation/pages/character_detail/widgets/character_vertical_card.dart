@@ -20,9 +20,10 @@ class CharacterVerticalCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.only( 
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(10),
-              topRight: Radius.circular(10),),
+              topRight: Radius.circular(10),
+            ),
             child: Image.network(
               character.image,
               height: 250,
@@ -35,7 +36,9 @@ class CharacterVerticalCard extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  character.name,
+                  character.name.length > 30
+                      ? '${character.name.substring(0, 30)}...'
+                      : character.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 24,
@@ -107,9 +110,11 @@ class CharacterVerticalCard extends StatelessWidget {
                           color: Color.fromRGBO(187, 222, 240, 1)),
                     ),
                     Text(
-                      character.origin.name,
+                      character.origin.name.length > 25
+                          ? '${character.origin.name.substring(0, 25)}...'
+                          : character.origin.name,
                       style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 18,
                           fontWeight: FontWeight.w400,
                           color: Color.fromRGBO(0, 181, 204, 1)),
                     ),
@@ -125,15 +130,16 @@ class CharacterVerticalCard extends StatelessWidget {
                           color: Color.fromRGBO(187, 222, 240, 1)),
                     ),
                     Text(
-                      character.location.name,
+                      character.location.name.length > 23
+                          ? '${character.location.name.substring(0, 23)}...'
+                          : character.location.name,
                       style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 18,
                           fontWeight: FontWeight.w400,
                           color: Color.fromRGBO(0, 181, 204, 1)),
                     ),
                   ],
                 ),
-                
                 SizedBox(height: 20),
                 Text(
                   'Aparece en ${character.episode.length} episodios',

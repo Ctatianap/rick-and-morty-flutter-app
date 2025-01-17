@@ -41,7 +41,9 @@ class CharacterHorizontalCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  character.name,
+                  character.name.length > 22
+                    ? '${character.name.substring(0, 22)}...'
+                    : character.name,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -58,7 +60,9 @@ class CharacterHorizontalCard extends StatelessWidget {
                 ),
                 SizedBox(height: 5),
                 Text(
-                  character.gender,
+                  character.gender.length > 25 
+                    ? '${character.gender.substring(0, 25)}...' 
+                    : character.gender,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white70,
@@ -66,7 +70,9 @@ class CharacterHorizontalCard extends StatelessWidget {
                 ),
                 SizedBox(height: 5),
                 Text(
-                  character.location.name,
+                  character.location.name.length > 25 
+                    ? '${character.location.name.substring(0, 25)}...' 
+                    : character.location.name,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white70,
