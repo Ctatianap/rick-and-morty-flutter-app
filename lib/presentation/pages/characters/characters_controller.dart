@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import '../../../data/repositories/characters_repository.dart';
-import '../../../data/models/rick_and_morty_characters_model.dart';
+import '../../../data/models/character_model.dart';
 
 class CharactersController extends GetxController {
   final CharactersRepository _charactersRepository = Get.find<CharactersRepository>();

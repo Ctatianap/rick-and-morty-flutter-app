@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import '../models/rick_and_morty_characters_model.dart';
+import '../models/character_list_model.dart';
 import '../../config/app_config.dart';
 
 class CharactersApi {

@@ -1,4 +1,4 @@
-import 'package:estrellas_prueba_tec/data/models/rick_and_morty_characters_model.dart';
+import 'package:estrellas_prueba_tec/data/models/character_model.dart';
 import 'package:flutter/material.dart';
 
 class CharacterVerticalCard extends StatelessWidget {
