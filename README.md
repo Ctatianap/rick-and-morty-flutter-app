@@ -58,7 +58,7 @@ Antes de empezar, asegúrate de tener instalados los siguientes requisitos:
    ```
    flutter doctor
    ```
-2. **Android Studio o cualquier otro IDE compatible con Flutter**: Configura un emulador con Android API 33 (Android 13) o utiliza un dispositivo físico.
+2. **Android Studio o cualquier otro IDE compatible con Flutter**: Configura un emulador con Android API 33 (Android 13), Android API 35 (Android 15) o utiliza un dispositivo físico.
 3. **Visual Studio**: Sí estas en un entorno windows es necesario tener [visualstudio](https://visualstudio.microsoft.com/downloads/)
 
 ## Configuración y ejecución
